@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURA // Exclusive Premium Calculator</title>
+    <title>Exclusive Premium Calculator</title>
     <!-- Google Fonts: Montserrat for luxury brand feel, Inter for clean inputs/numbers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
     <!-- Link to separated CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="ambient-glow"></div>
@@ -20,9 +24,9 @@
         <div class="header">
             <div class="badge">
                 <span class="badge-dot"></span>
-                Aura Premium Compute
+                Premium Calculator
             </div>
-            <h1>AURA</h1>
+            <h1>You Must be Rich, Right?</h1>
         </div>
 
         <!-- Luxury Calculator Container -->
@@ -64,18 +68,20 @@
 
     <!-- Multi-stage Paywall Overlay -->
     <div class="overlay" id="overlay">
-        
+
         <!-- MODAL STAGE 1: THE GATE -->
         <div class="modal-card active" id="modal-stage-1">
             <div class="modal-icon">
                 <!-- Golden Crown SVG -->
                 <svg fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z" />
+                    <path
+                        d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z" />
                 </svg>
             </div>
             <h2 class="modal-title">Premium Access Required</h2>
-            <p class="modal-subtitle">To render high-fidelity analytical results, upgrade to AURA Premium compute node instance.</p>
-            
+            <p class="modal-subtitle">To render high-fidelity analytical results, upgrade to Premium Calculator node
+                instance.</p>
+
             <div class="premium-pricing">
                 <span class="price-currency">$</span>
                 <span class="price-amount">4.99</span>
@@ -85,19 +91,19 @@
             <div class="features-list">
                 <div class="feature-item">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                     </svg>
                     <span>Unlimited Floating-Point Precision</span>
                 </div>
                 <div class="feature-item">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                     </svg>
                     <span>Dedicated Quantum CPU Cycles</span>
                 </div>
                 <div class="feature-item">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                     </svg>
                     <span>Luxurious Anti-Aliasing Fonts</span>
                 </div>
@@ -106,7 +112,7 @@
             <button class="modal-btn" id="btn-pay-stage-1">
                 Authorize Premium Node
                 <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
                 </svg>
             </button>
         </div>
@@ -114,12 +120,12 @@
         <!-- MODAL STAGE 2: CREDIT FORM -->
         <div class="modal-card" id="modal-stage-2">
             <h2 class="modal-title" style="margin-bottom: 20px;">Secure Settlement</h2>
-            
+
             <!-- Sleek Card Visualizer -->
             <div class="credit-card-preview">
                 <div class="card-brand">
                     <div class="card-chip"></div>
-                    <div class="card-logo">AURA PLATINUM</div>
+                    <div class="card-logo">LUXURY PLATINUM</div>
                 </div>
                 <div class="card-number-display" id="cc-num-preview">•••• •••• •••• ••••</div>
                 <div class="card-details-display">
@@ -135,25 +141,30 @@
             <form class="credit-form" id="cc-form" onsubmit="return false;">
                 <div class="input-group">
                     <label class="input-label">Cardholder Name</label>
-                    <input type="text" class="input-field" id="cc-holder" placeholder="ELON MUSK" autocomplete="off" maxlength="26" required>
+                    <input type="text" class="input-field" id="cc-holder" placeholder="ELON MUSK" autocomplete="off"
+                        maxlength="26" required>
                 </div>
                 <div class="input-group">
                     <label class="input-label">Card Number</label>
-                    <input type="text" class="input-field" id="cc-number" placeholder="4111 1111 1111 1111" autocomplete="off" maxlength="19" required>
+                    <input type="text" class="input-field" id="cc-number" placeholder="4111 1111 1111 1111"
+                        autocomplete="off" maxlength="19" required>
                 </div>
                 <div class="form-row">
                     <div class="input-group">
                         <label class="input-label">Expiration Date</label>
-                        <input type="text" class="input-field" id="cc-expiry" placeholder="MM/YY" autocomplete="off" maxlength="5" required>
+                        <input type="text" class="input-field" id="cc-expiry" placeholder="MM/YY" autocomplete="off"
+                            maxlength="5" required>
                     </div>
                     <div class="input-group">
                         <label class="input-label">CVV / Security Code</label>
-                        <input type="password" class="input-field" id="cc-cvv" placeholder="•••" autocomplete="off" maxlength="4" required>
+                        <input type="password" class="input-field" id="cc-cvv" placeholder="•••" autocomplete="off"
+                            maxlength="4" required>
                     </div>
                 </div>
 
                 <div class="disclaimer">
-                    DEMO SIMULATOR SECURE LAYER. Enter any random characters/numbers to proceed. No real transaction occurs.
+                    DEMO SIMULATOR SECURE LAYER. Enter any random characters/numbers to proceed. No real transaction
+                    occurs.
                 </div>
 
                 <button class="modal-btn" type="submit" id="btn-confirm-payment" style="margin-top: 10px;">
@@ -175,12 +186,12 @@
                 <div class="success-ring"></div>
                 <div class="success-circle-glow"></div>
                 <svg class="success-icon-svg" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                 </svg>
             </div>
 
             <h2 class="modal-title">Authorization Success</h2>
-            <div class="receipt-badge">REC-ID: <span id="receipt-id">AURA-9823X</span></div>
+            <div class="receipt-badge">REC-ID: <span id="receipt-id">MPEK-9823X</span></div>
 
             <div class="calculation-result-wrapper">
                 <p class="calc-expression" id="final-expression">2 + 2</p>
@@ -202,4 +213,5 @@
     <!-- Link to separated JS file -->
     <script src="script.js"></script>
 </body>
+
 </html>
